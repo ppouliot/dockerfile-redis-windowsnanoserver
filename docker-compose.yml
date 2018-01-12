@@ -1,0 +1,9 @@
+version: '3'
+services:                                                 
+  redis:                                      
+    image: ppouliot/redis-windowsnanoserver
+    build: .                                     
+    ports:                                    
+      - "6379"                        
+    volumes:                                   
+      - "c:\\data"  
